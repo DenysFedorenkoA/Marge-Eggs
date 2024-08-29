@@ -5656,7 +5656,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.LocalStorage.Cnds.OnItemGet,
 		C3.Plugins.LocalStorage.Exps.ItemValue,
 		C3.Plugins.LocalStorage.Cnds.OnItemMissing,
-		C3.Plugins.System.Cnds.TriggerOnce,
 		C3.Plugins.TelegramMiniAppsSDK.Exps.CloudStorageValue
 	];
 };
@@ -5716,6 +5715,7 @@ self.C3_JsPropNameTable = [
 	{varStr: 0},
 	{userID: 0},
 	{getGata: 0},
+	{getDataComplite: 0},
 	{loading_progress: 0},
 	{maxLoading_progress: 0},
 	{language: 0},
