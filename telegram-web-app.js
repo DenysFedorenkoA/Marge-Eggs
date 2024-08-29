@@ -1074,7 +1074,7 @@
       function invokeStorageMethod(method, params, callback) {
         if (!versionAtLeast('6.9')) {
           console.error('[Telegram.WebApp] CloudStorage is not supported in version ' + webAppVersion);
-          //throw Error('WebAppMethodUnsupported');
+          throw Error('WebAppMethodUnsupported');
         }
         invokeCustomMethod(method, params, callback);
         return cloudStorage;
@@ -1545,7 +1545,7 @@
     function invokeCustomMethod(method, params, callback) {
       if (!versionAtLeast('6.9')) {
         console.error('[Telegram.WebApp] Method invokeCustomMethod is not supported in version ' + webAppVersion);
-        //throw Error('WebAppMethodUnsupported');
+        throw Error('WebAppMethodUnsupported');
       }
       var req_id = generateCallbackId(16);
       var req_params = {req_id: req_id, method: method, params: params || {}};
@@ -1679,7 +1679,7 @@
     WebApp.switchInlineQuery = function (query, choose_chat_types) {
       if (!versionAtLeast('6.6')) {
         console.error('[Telegram.WebApp] Method switchInlineQuery is not supported in version ' + webAppVersion);
-        //throw Error('WebAppMethodUnsupported');
+        throw Error('WebAppMethodUnsupported');
       }
       if (!initParams.tgWebAppBotInline) {
         console.error('[Telegram.WebApp] Inline mode is disabled for this bot. Read more about inline mode: https://core.telegram.org/bots/inline');
@@ -1766,7 +1766,7 @@
       }
       if (!versionAtLeast('6.1')) {
         console.error('[Telegram.WebApp] Method openInvoice is not supported in version ' + webAppVersion);
-        //throw Error('WebAppMethodUnsupported');
+        throw Error('WebAppMethodUnsupported');
       }
       if (webAppInvoices[slug]) {
         console.error('[Telegram.WebApp] Invoice is already opened');
@@ -1781,7 +1781,7 @@
     WebApp.showPopup = function (params, callback) {
       if (!versionAtLeast('6.2')) {
         console.error('[Telegram.WebApp] Method showPopup is not supported in version ' + webAppVersion);
-        //throw Error('WebAppMethodUnsupported');
+        throw Error('WebAppMethodUnsupported');
       }
       if (webAppPopupOpened) {
         console.error('[Telegram.WebApp] Popup is already opened');
@@ -1898,7 +1898,7 @@
     WebApp.showScanQrPopup = function (params, callback) {
       if (!versionAtLeast('6.4')) {
         console.error('[Telegram.WebApp] Method showScanQrPopup is not supported in version ' + webAppVersion);
-        //throw Error('WebAppMethodUnsupported');
+        throw Error('WebAppMethodUnsupported');
       }
       if (webAppScanQrPopupOpened) {
         console.error('[Telegram.WebApp] Popup is already opened');
@@ -1925,7 +1925,7 @@
     WebApp.closeScanQrPopup = function () {
       if (!versionAtLeast('6.4')) {
         console.error('[Telegram.WebApp] Method closeScanQrPopup is not supported in version ' + webAppVersion);
-        //throw Error('WebAppMethodUnsupported');
+        throw Error('WebAppMethodUnsupported');
       }
   
       webAppScanQrPopupOpened = false;
@@ -1934,7 +1934,7 @@
     WebApp.readTextFromClipboard = function (callback) {
       if (!versionAtLeast('6.4')) {
         console.error('[Telegram.WebApp] Method readTextFromClipboard is not supported in version ' + webAppVersion);
-        //throw Error('WebAppMethodUnsupported');
+        throw Error('WebAppMethodUnsupported');
       }
       var req_id = generateCallbackId(16);
       var req_params = {req_id: req_id};
@@ -1946,7 +1946,7 @@
     WebApp.requestWriteAccess = function (callback) {
       if (!versionAtLeast('6.9')) {
         console.error('[Telegram.WebApp] Method requestWriteAccess is not supported in version ' + webAppVersion);
-        //throw Error('WebAppMethodUnsupported');
+        throw Error('WebAppMethodUnsupported');
       }
       if (WebAppWriteAccessRequested) {
         console.error('[Telegram.WebApp] Write access is already requested');
@@ -1960,7 +1960,7 @@
     WebApp.requestContact = function (callback) {
       if (!versionAtLeast('6.9')) {
         console.error('[Telegram.WebApp] Method requestContact is not supported in version ' + webAppVersion);
-        //throw Error('WebAppMethodUnsupported');
+        throw Error('WebAppMethodUnsupported');
       }
       if (WebAppContactRequested) {
         console.error('[Telegram.WebApp] Contact is already requested');
@@ -1975,7 +1975,7 @@
       params = params || {};
       if (!versionAtLeast('7.8')) {
         console.error('[Telegram.WebApp] Method shareToStory is not supported in version ' + webAppVersion);
-        //throw Error('WebAppMethodUnsupported');
+        throw Error('WebAppMethodUnsupported');
       }
       var a = document.createElement('A');
       a.href = media_url;
@@ -2068,3 +2068,5 @@
     WebView.postEvent('web_app_request_viewport');
   
   })();
+
+  //globalThis.Telegram = Telegram;
