@@ -123,6 +123,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.AJAX.Acts.Request,
 		C3.Plugins.Json.Acts.Parse,
 		C3.Plugins.AJAX.Exps.LastData,
+		C3.Plugins.Browser.Exps.Language,
 		C3.Plugins.AJAX.Cnds.OnComplete,
 		C3.Plugins.AJAX.Cnds.OnError
 	];
