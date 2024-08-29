@@ -121,14 +121,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Exps.AnimationFrameTag,
 		C3.Plugins.AJAX.Acts.Request,
 		C3.Plugins.Json.Acts.Parse,
-		C3.Plugins.AJAX.Exps.LastData,
-		C3.Plugins.Dictionary.Acts.JSONLoad,
-		C3.Plugins.Browser.Exps.Language,
-		C3.Plugins.System.Cnds.EveryTick,
-		C3.Plugins.TiledBg.Acts.SetWidth,
-		C3.Plugins.TiledBg.Exps.Width,
-		C3.Plugins.AJAX.Cnds.OnComplete,
-		C3.Plugins.AJAX.Cnds.OnError
+		C3.Plugins.AJAX.Exps.LastData
 	];
 };
 self.C3_JsPropNameTable = [

@@ -5374,28 +5374,6 @@ self.C3_ExpressionFuncs = [
 		},
 		() => "en",
 		() => "load",
-		p => {
-			const n0 = p._GetNode(0);
-			return () => n0.ExpObject("sound");
-		},
-		p => {
-			const n0 = p._GetNode(0);
-			return () => n0.ExpObject("music");
-		},
-		p => {
-			const n0 = p._GetNode(0);
-			return () => n0.ExpObject("bestScore");
-		},
-		p => {
-			const n0 = p._GetNode(0);
-			return () => n0.ExpObject("language");
-		},
-		() => "loadBar",
-		p => {
-			const n0 = p._GetNode(0);
-			const v1 = p._GetNode(1).GetVar();
-			return () => ((n0.ExpObject() / (1 + 3)) * v1.GetValue());
-		},
 		() => "ads",
 		() => "leaderboard"
 ];
