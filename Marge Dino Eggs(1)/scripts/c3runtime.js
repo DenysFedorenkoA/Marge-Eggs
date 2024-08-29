@@ -5247,6 +5247,7 @@ self.C3_ExpressionFuncs = [
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => (f0() + "save");
 		},
+		() => "save",
 		() => 45,
 		() => 60,
 		() => 0.2,
@@ -5353,10 +5354,7 @@ self.C3_ExpressionFuncs = [
 		() => "sound",
 		() => "displayBastScore",
 		() => "saveVaribale",
-		p => {
-			const f0 = p._GetNode(0).GetBoundMethod();
-			return () => (f0() + "var");
-		},
+		() => "varible",
 		() => "clearSaveData",
 		p => {
 			const n0 = p._GetNode(0);
@@ -5374,6 +5372,14 @@ self.C3_ExpressionFuncs = [
 		},
 		() => "en",
 		() => "load",
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			return () => f0("varible");
+		},
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			return () => f0("save");
+		},
 		p => {
 			const n0 = p._GetNode(0);
 			return () => n0.ExpObject("sound");
