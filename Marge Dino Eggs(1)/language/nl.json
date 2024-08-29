@@ -1,0 +1,23 @@
+{
+    "c2dictionary": true,
+    "data": {
+        "gameOver": "SPEL AFGELOPEN",
+        "newGame": "NIEUW SPEL",
+        "replay": "OPNIEUW SPELEN",
+        "home": "THUIS",
+        "settings": "INSTELLINGEN",
+        "leaderboard": "SCOREBORD",
+        "loading": "LADEN",
+        "music": "MUZIEK",
+        "sound": "GELUID",
+        "vibrate": "TRILLEN",
+        "menu": "MENU",
+        "landuage": "TAAL",
+        "score": "SCORE",
+        "bestScore": "BESTE SCORE",
+        "reward": "BELONING",
+        "dailyReward": "DAGELIJKSE BELONING",
+        "shop": "WINKEL",
+        "purchase": "AANKOOP"
+    }
+}
