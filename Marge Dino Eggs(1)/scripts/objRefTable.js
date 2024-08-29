@@ -18,7 +18,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Anchor,
 		C3.Plugins.Text,
 		C3.Plugins.Dictionary,
-		C3.Plugins.TelegramMiniAppsSDK,
 		C3.Plugins.System.Cnds.IsGroupActive,
 		C3.Behaviors.Timer.Cnds.OnTimer,
 		C3.Plugins.System.Acts.CreateObject,
@@ -123,7 +122,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.AJAX.Acts.Request,
 		C3.Plugins.Json.Acts.Parse,
 		C3.Plugins.AJAX.Exps.LastData,
-		C3.Plugins.TelegramMiniAppsSDK.Exps.CloudStorageValue,
 		C3.Plugins.Dictionary.Acts.JSONLoad,
 		C3.Plugins.Browser.Exps.Language,
 		C3.Plugins.System.Cnds.EveryTick,
@@ -168,7 +166,6 @@ self.C3_JsPropNameTable = [
 	{cursor: 0},
 	{LoadingBar_Back: 0},
 	{LoadingBar_Top: 0},
-	{TelegramMiniAppsSDK: 0},
 	{gameObjectFam: 0},
 	{touchID: 0},
 	{start: 0},
@@ -221,6 +218,5 @@ self.InstanceType = {
 	cursor: class extends self.ISpriteInstance {},
 	LoadingBar_Back: class extends self.ITiledBackgroundInstance {},
 	LoadingBar_Top: class extends self.ITiledBackgroundInstance {},
-	TelegramMiniAppsSDK: class extends self.C3.Plugins.TelegramMiniAppsSDK.Instance {},
 	gameObjectFam: class extends self.ISpriteInstance {}
 }
