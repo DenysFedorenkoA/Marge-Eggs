@@ -5367,7 +5367,6 @@ self.C3_ExpressionFuncs = [
 		},
 		() => "en",
 		() => "load",
-		() => "iosvievport2.css",
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => f0("getData");
