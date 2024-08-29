@@ -5650,11 +5650,14 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Json.Acts.Parse,
 		C3.Plugins.AJAX.Exps.LastData,
 		C3.Plugins.TelegramMiniAppsSDK.Exps.UserId,
+		C3.Plugins.Text.Acts.AppendText,
 		C3.Plugins.LocalStorage.Cnds.OnItemExists,
 		C3.Plugins.LocalStorage.Acts.GetItem,
 		C3.Plugins.LocalStorage.Cnds.OnItemGet,
 		C3.Plugins.LocalStorage.Exps.ItemValue,
-		C3.Plugins.LocalStorage.Cnds.OnItemMissing
+		C3.Plugins.LocalStorage.Cnds.OnItemMissing,
+		C3.Plugins.System.Cnds.TriggerOnce,
+		C3.Plugins.TelegramMiniAppsSDK.Exps.CloudStorageValue
 	];
 };
 self.C3_JsPropNameTable = [
@@ -5711,6 +5714,7 @@ self.C3_JsPropNameTable = [
 	{key: 0},
 	{var: 0},
 	{varStr: 0},
+	{userID: 0},
 	{getGata: 0},
 	{loading_progress: 0},
 	{maxLoading_progress: 0},
@@ -6040,7 +6044,16 @@ self.C3_ExpressionFuncs = [
 		},
 		() => "en",
 		() => "load",
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => ("\n" + v0.GetValue());
+		},
 		() => "loadGameObject",
+		() => "\n1",
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			return () => f0("varible");
+		},
 		() => "ads",
 		() => "leaderboard"
 ];
