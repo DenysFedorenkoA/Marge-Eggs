@@ -1,0 +1,23 @@
+{
+    "c2dictionary": true,
+    "data": {
+        "gameOver": "JOC TERMINAT  ",
+        "newGame": "JOC NOU  ",
+        "replay": "REIAERE  ",
+        "home": "ACASĂ  ",
+        "settings": "SETĂRI  ",
+        "leaderboard": "CLASAMENT  ",
+        "loading": "ÎNCĂRCARE  ",
+        "music": "MUZICĂ  ",
+        "sound": "SUNET  ",
+        "vibrate": "VIBRAȚIE  ",
+        "menu": "MENIU  ",
+        "landuage": "LIMBĂ  ",
+        "score": "SCOR  ",
+        "bestScore": "CEL MAI BUN SCOR  ",
+        "reward": "RECOMPENSĂ  ",
+        "dailyReward": "RECOMPENSĂ ZILNICĂ  ",
+        "shop": "MAGAZIN  ",
+        "purchase": "CUMPARĂRI"
+    }
+}

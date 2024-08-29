@@ -1,0 +1,23 @@
+{
+    "c2dictionary": true,
+    "data": {
+        "gameOver": "JEU TERMINÉ  ",
+        "newGame": "NOUVELLE PARTIE  ",
+        "replay": "REJOUER  ",
+        "home": "ACCUEIL  ",
+        "settings": "PARAMÈTRES  ",
+        "leaderboard": "CLASSEMENT  ",
+        "loading": "CHARGEMENT  ",
+        "music": "MUSIQUE  ",
+        "sound": "SON  ",
+        "vibrate": "VIBRER  ",
+        "menu": "MENU  ",
+        "landuage": "LANGUE  ",
+        "score": "SCORE  ",
+        "bestScore": "MEILLEUR SCORE  ",
+        "reward": "RÉCOMPENSE  ",
+        "dailyReward": "RÉCOMPENSE QUOTIDIENNE  ",
+        "shop": "BOUTIQUE  ",
+        "purchase": "ACHAT"
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "c2dictionary": true,
+    "data": {
+        "gameOver": "JUEGO TERMINADO  ",
+        "newGame": "NUEVO JUEGO  ",
+        "replay": "REPETIR  ",
+        "home": "INICIO  ",
+        "settings": "AJUSTES  ",
+        "leaderboard": "TABLA DE LÍDERES  ",
+        "loading": "CARGANDO  ",
+        "music": "MÚSICA  ",
+        "sound": "SONIDO  ",
+        "vibrate": "VIBRAR  ",
+        "menu": "MENÚ  ",
+        "landuage": "IDIOMA  ",
+        "score": "PUNTUACIÓN  ",
+        "bestScore": "MEJOR PUNTUACIÓN  ",
+        "reward": "RECOMPENSA  ",
+        "dailyReward": "RECOMPENSA DIARIA  ",
+        "shop": "TIENDA  ",
+        "purchase": "COMPRAR"
+    }
+}

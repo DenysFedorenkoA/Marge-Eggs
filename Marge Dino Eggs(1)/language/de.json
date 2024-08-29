@@ -1,0 +1,23 @@
+{
+    "c2dictionary": true,
+    "data": {
+        "gameOver": "SPIEL VORBEI  ",
+        "newGame": "NEUES SPIEL  ",
+        "replay": "WIEDERHOLEN  ",
+        "home": "STARTSEITE  ",
+        "settings": "EINSTELLUNGEN  ",
+        "leaderboard": "BESTENLISTE  ",
+        "loading": "LADEN  ",
+        "music": "MUSIK  ",
+        "sound": "TON  ",
+        "vibrate": "VIBRATION  ",
+        "menu": "MENÜ  ",
+        "landuage": "SPRACHE  ",
+        "score": "PUNKTZAHL  ",
+        "bestScore": "BESTE PUNKTZAHL  ",
+        "reward": "BELOHNUNG  ",
+        "dailyReward": "TÄGLICHE BELOHNUNG  ",
+        "shop": "SHOP  ",
+        "purchase": "KAUF"
+    }
+}

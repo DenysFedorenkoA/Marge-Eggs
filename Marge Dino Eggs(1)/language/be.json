@@ -1,0 +1,23 @@
+{
+    "c2dictionary": true,
+    "data": {
+        "gameOver": "ГУЛЁННЕ СКАНЧЫЛАСЯ  ",
+        "newGame": "НОВАЯ ГУЛЁННЕ  ",
+        "replay": "ПАЎТОРА  ",
+        "home": "ДОМОЎКА  ",
+        "settings": "НАЛАДЫ  ",
+        "leaderboard": "ТАБЛIЦА ЛIДЭРАЎ  ",
+        "loading": "ЗАГРУЗКА  ",
+        "music": "МУЗЫКА  ",
+        "sound": "ГУКI  ",
+        "vibrate": "ВІБРАЦЫЯ  ",
+        "menu": "МЕНЮ  ",
+        "landuage": "МОВА  ",
+        "score": "ЛIЧБА  ",
+        "bestScore": "ЛЕПШЫ РЭЗУЛЬТАТ  ",
+        "reward": "УЗНАГАРОДА  ",
+        "dailyReward": "УЗНАГАРОДА ЗА УВЕХАВАННЕ  ",
+        "shop": "МАГАЗIН  ",
+        "purchase": "ПАКУПКI"
+    }
+}
