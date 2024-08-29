@@ -1,0 +1,23 @@
+{
+    "c2dictionary": true,
+    "data": {
+        "gameOver": "KONIEC GRY  ",
+        "newGame": "NOWA GRA  ",
+        "replay": "POWTÓRZ  ",
+        "home": "STRONA GŁÓWNA  ",
+        "settings": "USTAWIENIA  ",
+        "leaderboard": "TABELA WYNIKÓW  ",
+        "loading": "ŁADOWANIE  ",
+        "music": "MUZYKA  ",
+        "sound": "DŹWIĘK  ",
+        "vibrate": "WIBRACJA  ",
+        "menu": "MENU  ",
+        "landuage": "JĘZYK  ",
+        "score": "WYNIK  ",
+        "bestScore": "NAJLEPSZY WYNIK  ",
+        "reward": "NAGRODA  ",
+        "dailyReward": "CODZIENNA NAGRODA  ",
+        "shop": "SKLEP  ",
+        "purchase": "ZAKUP"
+    }
+}
