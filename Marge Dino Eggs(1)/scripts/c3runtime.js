@@ -7850,7 +7850,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.AJAX.Acts.Request,
 		C3.Plugins.Json.Acts.Parse,
 		C3.Plugins.AJAX.Exps.LastData,
-		C3.Plugins.TelegramMiniAppsSDK.Exps.CloudStorageValue,
 		C3.Plugins.LocalStorage.Cnds.OnItemExists,
 		C3.Plugins.LocalStorage.Acts.GetItem,
 		C3.Plugins.LocalStorage.Cnds.OnItemGet,
@@ -8248,10 +8247,6 @@ self.C3_ExpressionFuncs = [
 		},
 		() => "en",
 		() => "load",
-		p => {
-			const f0 = p._GetNode(0).GetBoundMethod();
-			return () => f0("varible");
-		},
 		() => "loadGameObject",
 		() => "ads",
 		() => "1",
