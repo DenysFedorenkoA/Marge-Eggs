@@ -5388,7 +5388,10 @@ self.C3_ExpressionFuncs = [
 			const n0 = p._GetNode(0);
 			return () => n0.ExpObject("language");
 		},
-		() => "qwe",
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			return () => f0("varible");
+		},
 		() => "ads",
 		() => "leaderboard"
 ];
