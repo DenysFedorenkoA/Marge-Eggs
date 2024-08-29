@@ -5656,7 +5656,10 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.LocalStorage.Cnds.OnItemGet,
 		C3.Plugins.LocalStorage.Exps.ItemValue,
 		C3.Plugins.LocalStorage.Cnds.OnItemMissing,
-		C3.Plugins.TelegramMiniAppsSDK.Exps.CloudStorageValue
+		C3.Plugins.AJAX.Cnds.OnComplete,
+		C3.Plugins.AJAX.Cnds.OnError,
+		C3.Plugins.TelegramMiniAppsSDK.Exps.CloudStorageValue,
+		C3.Plugins.Dictionary.Acts.JSONLoad
 	];
 };
 self.C3_JsPropNameTable = [
@@ -6053,6 +6056,18 @@ self.C3_ExpressionFuncs = [
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => f0("varible");
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject("sound");
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject("music");
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject("bestScore");
 		},
 		() => "ads",
 		() => "leaderboard"
