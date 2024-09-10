@@ -130,7 +130,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.TiledBg.Acts.SetWidth,
 		C3.Plugins.TiledBg.Exps.Width,
 		C3.Plugins.AJAX.Cnds.OnComplete,
-		C3.Plugins.AJAX.Cnds.OnError
+		C3.Plugins.AJAX.Cnds.OnError,
+		C3.Plugins.System.Cnds.TriggerOnce
 	];
 };
 self.C3_JsPropNameTable = [
