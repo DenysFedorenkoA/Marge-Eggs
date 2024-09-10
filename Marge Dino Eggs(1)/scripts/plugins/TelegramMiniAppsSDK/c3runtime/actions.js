@@ -57,22 +57,22 @@ C3.Plugins.TelegramMiniAppsSDK.Acts =
         RequestAccessBiometricManager(reason) {
             Telegram.WebApp.BiometricManager.requestAccess({
                 reason: reason
-            }, async (isAccessGranted) => {
+            }, isAccessGranted => {
                 if (isAccessGranted) {
-                    await this._triggerAsync(this.PluginConditions.OnBiometricAccessGranted);
+                    this._trigger(this.PluginConditions.OnBiometricAccessGranted);
                 }
                 else {
-                    await this._triggerAsync(this.PluginConditions.OnBiometricAccessDeclined);
+                    this._trigger(this.PluginConditions.OnBiometricAccessDeclined);
                 }
             });
         },
         UpdateBiometricToken(token) {
-            Telegram.WebApp.BiometricManager.updateBiometricToken(token, async (isBiometricTokenUpdated) => {
+            Telegram.WebApp.BiometricManager.updateBiometricToken(token, isBiometricTokenUpdated => {
                 if (isBiometricTokenUpdated) {
-                    await this._triggerAsync(this.PluginConditions.OnUpdateBiometricTokenSuccess);
+                    this._trigger(this.PluginConditions.OnUpdateBiometricTokenSuccess);
                 }
                 else {
-                    await this._triggerAsync(this.PluginConditions.OnUpdateBiometricTokenError);
+                    this._trigger(this.PluginConditions.OnUpdateBiometricTokenError);
                 }
             });
         },

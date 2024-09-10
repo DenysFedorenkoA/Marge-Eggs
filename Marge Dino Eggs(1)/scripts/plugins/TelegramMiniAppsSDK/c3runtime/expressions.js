@@ -63,7 +63,7 @@ C3.Plugins.TelegramMiniAppsSDK.Exps =
          */
         CloudStorageValue(key) {
             if (this.cloudStorage !== null && this.cloudStorage[key] !== null) {
-                return this.cloudStorage[key];
+                return String(this.cloudStorage[key]);
             }
             else
                 return '';

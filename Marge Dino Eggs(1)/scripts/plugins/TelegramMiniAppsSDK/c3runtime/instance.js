@@ -1,7 +1,8 @@
 const C3 = globalThis.C3;
+const DOM_COMPONENT_ID = "TelegramMiniAppsSDK";
 class SingleGlobalInstance extends globalThis.ISDKInstanceBase {
     constructor() {
-        super();
+        super({ domComponentId: DOM_COMPONENT_ID });
         this.isVerticalSwipesEnabled = false;
         this.isClosingConfirmationEnabled = false;
         this.isExpanded = false;
@@ -11,18 +12,14 @@ class SingleGlobalInstance extends globalThis.ISDKInstanceBase {
         this.PluginConditions = C3.Plugins.TelegramMiniAppsSDK.Cnds;
         const properties = this._getInitProperties();
         if (properties) {
-            //@ts-ignore
             this.isExpanded = properties[0];
-            if (this.isExpanded) {
+            if (this.isExpanded)
                 Telegram.WebApp.expand();
-            }
-            //@ts-ignore
             this.isClosingConfirmationEnabled = properties[1];
             if (this.isClosingConfirmationEnabled) {
                 Telegram.WebApp.enableClosingConfirmation();
             }
             Telegram.WebApp.disableClosingConfirmation();
-            //@ts-ignore
             this.isVerticalSwipesEnabled = properties[2];
             if (this.isVerticalSwipesEnabled) {
                 Telegram.WebApp.enableVerticalSwipes();
@@ -32,6 +29,15 @@ class SingleGlobalInstance extends globalThis.ISDKInstanceBase {
         this._loadCloudStorage();
         this._setupEventHandlers();
         Telegram.WebApp.ready();
+        // this.runtime.addLoadPromise(
+        //     this._postToDOMAsync("get-telegram-object").then(
+        //         _data => {
+        //             console.log(_data);
+        //             //const data = _data as JSONObject;
+        //             //console.log(data);
+        //         }
+        //     )
+        // )
     }
     _release() {
         super._release();
@@ -51,15 +57,17 @@ class SingleGlobalInstance extends globalThis.ISDKInstanceBase {
         }
     }
     _loadCloudStorage() {
-        Telegram.WebApp.CloudStorage.getKeys((error, keys) => {
-            if (keys !== null) {
-                Telegram.WebApp.CloudStorage.getItems(keys, (error, values) => {
-                    if (error === null) {
-                        this.cloudStorage = values;
-                    }
-                });
-            }
-        });
+        if (Telegram.WebApp.version !== '6.0') {
+            Telegram.WebApp.CloudStorage.getKeys((error, keys) => {
+                if (keys !== null) {
+                    Telegram.WebApp.CloudStorage.getItems(keys, (error, values) => {
+                        if (error === null) {
+                            this.cloudStorage = values;
+                        }
+                    });
+                }
+            });
+        }
     }
     _setupEventHandlers() {
         Telegram.WebApp.onEvent('backButtonClicked', () => {
