@@ -5243,6 +5243,7 @@ self.C3_ExpressionFuncs = [
 			const n0 = p._GetNode(0);
 			return () => (n0.ExpObject()).toString();
 		},
+		() => 3,
 		() => "saveGame",
 		() => 45,
 		() => 60,
@@ -5287,7 +5288,6 @@ self.C3_ExpressionFuncs = [
 		},
 		() => 20,
 		() => "gameOver",
-		() => 3,
 		() => "tutor",
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
