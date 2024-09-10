@@ -5243,10 +5243,7 @@ self.C3_ExpressionFuncs = [
 			const n0 = p._GetNode(0);
 			return () => (n0.ExpObject()).toString();
 		},
-		p => {
-			const f0 = p._GetNode(0).GetBoundMethod();
-			return () => (f0() + "save");
-		},
+		() => "getData",
 		() => 45,
 		() => 60,
 		() => 0.2,
@@ -5353,11 +5350,12 @@ self.C3_ExpressionFuncs = [
 		() => "sound",
 		() => "displayBastScore",
 		() => "saveVaribale",
+		() => "save",
+		() => "clearSaveData",
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
-			return () => (f0() + "var");
+			return () => (f0() + "save");
 		},
-		() => "clearSaveData",
 		p => {
 			const n0 = p._GetNode(0);
 			const n1 = p._GetNode(1);
