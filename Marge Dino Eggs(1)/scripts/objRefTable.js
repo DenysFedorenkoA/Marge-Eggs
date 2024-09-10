@@ -190,6 +190,7 @@ self.C3_JsPropNameTable = [
 	{loading_progress: 0},
 	{maxLoading_progress: 0},
 	{getData: 0},
+	{getData2: 0},
 	{language: 0},
 	{reward: 0}
 ];
