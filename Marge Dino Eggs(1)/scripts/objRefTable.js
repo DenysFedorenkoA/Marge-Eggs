@@ -188,10 +188,10 @@ self.C3_JsPropNameTable = [
 	{key: 0},
 	{var: 0},
 	{varStr: 0},
-	{loading_progress: 0},
-	{maxLoading_progress: 0},
 	{getData: 0},
 	{getData2: 0},
+	{loading_progress: 0},
+	{maxLoading_progress: 0},
 	{language: 0},
 	{reward: 0}
 ];
