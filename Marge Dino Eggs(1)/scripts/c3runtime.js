@@ -5245,6 +5245,7 @@ self.C3_ExpressionFuncs = [
 		},
 		() => 3,
 		() => "saveGame",
+		() => 0.1,
 		() => 45,
 		() => 60,
 		() => 0.2,
@@ -5280,7 +5281,6 @@ self.C3_ExpressionFuncs = [
 			const v1 = p._GetNode(1).GetVar();
 			return () => f0(v1.GetValue());
 		},
-		() => 0.1,
 		() => "gameObjectSize",
 		p => {
 			const n0 = p._GetNode(0);
