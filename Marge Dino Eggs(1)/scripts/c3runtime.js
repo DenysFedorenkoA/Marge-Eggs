@@ -5349,12 +5349,8 @@ self.C3_ExpressionFuncs = [
 		},
 		() => "sound",
 		() => "displayBastScore",
-		p => {
-			const n0 = p._GetNode(0);
-			return () => n0.ExpObject("bestScore");
-		},
 		() => "saveVaribale",
-		() => "save",
+		() => "saveVariable",
 		() => "clearSaveData",
 		p => {
 			const n0 = p._GetNode(0);
@@ -5371,15 +5367,7 @@ self.C3_ExpressionFuncs = [
 			return () => (("language\\" + v0.GetValue()) + ".json");
 		},
 		() => "en",
-		() => "load",
-		p => {
-			const f0 = p._GetNode(0).GetBoundMethod();
-			return () => f0("saveGame");
-		},
-		p => {
-			const f0 = p._GetNode(0).GetBoundMethod();
-			return () => f0("save");
-		},
+		() => "loadCloudStorage",
 		p => {
 			const n0 = p._GetNode(0);
 			return () => n0.ExpObject("sound");
@@ -5390,13 +5378,20 @@ self.C3_ExpressionFuncs = [
 		},
 		p => {
 			const n0 = p._GetNode(0);
+			return () => n0.ExpObject("bestScore");
+		},
+		p => {
+			const n0 = p._GetNode(0);
 			return () => n0.ExpObject("language");
 		},
+		() => "removeCloudStorage",
+		() => "saveCloudStorage",
+		() => "load",
 		() => "loadBar",
 		p => {
 			const n0 = p._GetNode(0);
 			const v1 = p._GetNode(1).GetVar();
-			return () => ((n0.ExpObject() / 2) * v1.GetValue());
+			return () => ((n0.ExpObject() / (2 + 3)) * v1.GetValue());
 		},
 		() => "ads",
 		() => "leaderboard"
